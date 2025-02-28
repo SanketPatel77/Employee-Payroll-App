@@ -3,20 +3,18 @@ package com.bridgelabz.employeepayrollapp.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
-@Entity
-@Table(name = "employee")
-
-public class EmployeePayrollData {
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private int employeeId;
+    private int id;
     private String name;
     private long salary;
+
+
 
 }
